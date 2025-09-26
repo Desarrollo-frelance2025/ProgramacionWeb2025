@@ -1,0 +1,78 @@
+/**** Login ****/
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.img-background{
+    background-image: url(./imgs/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 20px 20px 20px 20px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-title {
+    color: #1B244F;
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.login-subtitle {
+    color: #6c757d;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.hospital-logo img{
+    margin-bottom: 20px;
+    width: 75px;
+}
+
+button.btn-login {
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 30px;
+    width: 100%;
+}
+
+button.btn-forgotPsw {
+    background: #6c757d;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 30px;
+    width: 100%;
+}
+
+.btn-login:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+}
+
+.btn-forgotPsw:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
+}
+
