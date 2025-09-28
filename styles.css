@@ -1,6 +1,26 @@
-/**** Login ****/
+/**** Background ****/
+.background{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
 
-body {
+body .background{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body nav{
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+}
+
+body .modal{
   font-family: "Manrope", sans-serif;
   font-optical-sizing: auto;
   font-weight: 200;
@@ -14,12 +34,12 @@ body {
     min-height: 100vh;
 }
 
-.background{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.btn-login a{
+    text-decoration: none;
+    color: white;
 }
 
+/**** Login ****/
 .login-container {
     background: rgba(255, 255, 255, 0.95);
     border-radius: 20px 20px 20px 20px;
@@ -66,6 +86,36 @@ button.btn-forgotPsw {
     width: 100%;
 }
 
+button.btn-sendEmail {
+    background: #3498db;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px;
+    width: 13%;
+}
+
+button.btn-cancelEmail {
+    background: #6c757d;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px;
+    width: 13%;
+}
+
+button.btn-submit {
+    background: #3498db;
+    text-align: center;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 8px;
+    width: 13%;
+}
+
 .btn-login:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
@@ -76,3 +126,31 @@ button.btn-forgotPsw {
     box-shadow: 0 8px 25px rgba(52, 152, 219, 0.3);
 }
 
+div.card-header-color {
+    background-color: #3498db;
+    color: white;
+}
+
+/**** Utilities ****/
+.visibility-hidden{
+    visibility: hidden;
+}
+
+.visibility-remove{
+    display: none;
+}
+
+.visibility-show {
+    visibility: visible;
+}
+
+/**** MediaQuerys ****/
+@media only screen and (max-width: 706px) {
+    button.btn-sendEmail {
+        width: 100%;
+    }
+
+    button.btn-cancelEmail {
+        width: 100%;
+    }
+}
